@@ -3,8 +3,8 @@ import { basename, resolve } from 'path'
 
 import type { Config } from '@jest/types'
 import { createLogger } from 'bs-logger'
-import stableStringify from 'fast-json-stable-stringify'
 import { stringify as stringifyJson5 } from 'json5'
+import stableStringify from 'safe-stable-stringify'
 import type { Arguments } from 'yargs'
 
 import type { CliCommand } from '..'

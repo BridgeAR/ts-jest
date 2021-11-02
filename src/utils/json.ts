@@ -1,5 +1,5 @@
 /* eslint-disable no-redeclare */
-import stableStringify from 'fast-json-stable-stringify'
+import stableStringify from 'safe-stable-stringify'
 
 const UNDEFINED = 'undefined'
 

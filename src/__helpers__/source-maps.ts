@@ -2,7 +2,7 @@
 import { realpathSync } from 'fs'
 import { isAbsolute, relative } from 'path'
 
-import stableStringify = require('fast-json-stable-stringify')
+import stableStringify from 'safe-stable-stringify'
 import type { RawSourceMap } from 'source-map'
 
 export function base64ToSourceMaps(base64: string): RawSourceMap {
